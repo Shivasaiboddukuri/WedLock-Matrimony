@@ -1,0 +1,85 @@
+
+<div class="content-wrapper">
+    <div class="container mt-5">
+      <!-- Successfully Married Couples -->
+      <h2>Recently Married Couples</h2>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let slide of slides">
+          <div class="card mb-4 shadow-sm">
+            <img [src]="slide.image" alt="slide image" class="card-img-top" style="height: 300px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">{{ slide.title }}</h5>
+              <p class="card-text">{{ slide.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Best Feedbacks -->
+      <!-- Best Feedbacks -->
+<div class="mt-5">
+    <h2>Best Feedbacks</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let feedback of feedbacks">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ feedback.name }}</h5>
+            <!-- Star rating -->
+            <div class="rating">
+              <span class="star" *ngFor="let star of getStarRating(feedback.rating)">&#9733;</span>
+              <span class="star-outline" *ngFor="let star of getEmptyStars(feedback.rating)">&#9734;</span>
+            </div>
+            <p class="card-text">{{ feedback.message }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+      <!-- Features Section -->
+      <div class="mt-5">
+        <h2>Why Choose Us</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <h4 class="card-title">Matches</h4>
+                <p class="card-text">Find your perfect match with our advanced matching algorithm.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <h4 class="card-title">Email Notifications</h4>
+                <p class="card-text">Get notified via email for new matches and messages.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <h4 class="card-title">Profile Management</h4>
+                <p class="card-text">Manage and update your profile to attract more matches.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body text-center">
+                <h4 class="card-title">Advanced Search</h4>
+                <p class="card-text">Use our advanced search features to find your ideal partner.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Call to Action -->
+      <div class="mt-5 text-center">
+        <a class="btn btn-primary btn-lg" href="/profile" role="button">Start Now</a>
+      </div>
+    </div>
+  </div>
+  

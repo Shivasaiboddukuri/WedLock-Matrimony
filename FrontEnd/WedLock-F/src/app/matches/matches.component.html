@@ -1,0 +1,49 @@
+<body>
+    <h2></h2>
+    <h2></h2>
+    <h3 class="h2"><i><b>----Matches----</b></i></h3><br/><br/>
+  
+    <div class="container">
+      <div class="row flex-column overflow-auto">
+        <div class="col-md-4 mb-4" *ngFor="let us of oppositeGenderUsers" align="center">
+          <div class="card custom-card shadow-sm d-flex flex-row" (click)="us.showDetails = !us.showDetails">
+            <img class="card-img-left" [src]="us.gender === 'Male' ? 'assets/Images/boy.jpg' : 'assets/Images/girl.jpg'" alt="Profile image">
+            <div class="card-body custom-card-body">
+              <table class="table custom-table mb-0">
+                <tbody>
+                  <tr>
+                    <td><b>Name:</b></td>
+                    <td>{{ us.userName }}</td>
+                  </tr>
+                  <tr>
+                    <td><b>Place:</b></td>
+                    <td>{{ us.location }}</td>
+                  </tr>
+                  <tr *ngIf="us.showDetails">
+                    <td><b>Age:</b></td>
+                    <td>{{ us.dateOfBirth | age }}</td>
+                  </tr>
+                  <tr *ngIf="us.showDetails">
+                    <td><b>Mother Tongue:</b></td>
+                    <td>{{ us.motherTongue }}</td>
+                  </tr>
+                  <tr *ngIf="us.showDetails">
+                    <td><b>Height:</b></td>
+                    <td>{{ us.height }}</td>
+                  </tr>
+                  <tr *ngIf="us.showDetails">
+                    <td><b>Email ID:</b></td>
+                    <td>{{ us.emailId }}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div align="center" class="request-button-container">
+                <button (click)="request(us); $event.stopPropagation()" class="btn btn-primary mt-2">Request</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  

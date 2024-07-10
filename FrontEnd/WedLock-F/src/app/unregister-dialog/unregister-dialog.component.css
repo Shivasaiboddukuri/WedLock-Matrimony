@@ -1,0 +1,52 @@
+/* Add any custom styles for the dialog here */
+/* General styling for the dialog */
+mat-dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  mat-dialog-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  /* Specific styling for the textarea */
+  textarea[matInput] {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Dialog actions styling */
+  mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+  
+  /* Styling for the buttons */
+  button[mat-button] {
+    margin-left: 8px;
+  }
+  
+  button[mat-button]:first-child {
+    margin-left: 0;
+  }
+  
+  /* Additional focus styling for the primary button */
+  button[cdkFocusInitial] {
+    background-color: #3f51b5; /* Primary color */
+    color: white;
+  }
+  
+  button[cdkFocusInitial]:hover {
+    background-color: #303f9f; /* Darker shade of primary color */
+  }
+  

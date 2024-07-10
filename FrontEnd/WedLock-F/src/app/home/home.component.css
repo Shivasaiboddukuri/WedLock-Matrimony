@@ -1,0 +1,104 @@
+/* General styling */
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Adding a white background with opacity */
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 20px;
+}
+
+/* Card styling */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth effect */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+/* Feedback section */
+#feedbacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#feedbacks .card {
+  margin: 10px;
+  padding: 20px;
+  width: 300px; /* Set a fixed width for consistency */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #f1c40f; /* Star color */
+}
+
+.star-outline {
+  color: #bdc3c7; /* Empty star color */
+}
+
+/* Features section */
+#features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#features .card {
+  margin: 10px;
+  text-align: center;
+}
+
+/* Call to Action */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling */
+body {
+  padding-top: 20px; /* Ensure there's space at the top of the page */
+}
+
+.container {
+  padding-top: 20px; /* Ensure there's space at the top of the container */
+  background-image: url('src/assets/Images/About.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
